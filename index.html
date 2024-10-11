@@ -1,167 +1,80 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PORTAFOLIO XCF</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <!-- Estilos personalizados -->
-  <link rel="stylesheet" href="style.css">
+  <title>Ejemplos de columnas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">PORTAFOLIO XCF</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#hero">Inicio</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="actividadesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Actividades
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="actividadesDropdown">
-              <li><a class="dropdown-item" href="https://www.canva.com/design/DAGOao7nuCI/B3rtgYF6S9WGXMGh2mcTCw/edit?utm_content=DAGOao7nuCI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Actividad 1</a></li>
-              <li><a class="dropdown-item" href="a2/index.html">Actividad 2</a></li>
-              <li><a class="dropdown-item" href="a3/index2.html">Actividad 3</a></li>
-              <li><a class="dropdown-item" href="a4/index.html">Actividad 4</a></li>
-              <li><a class="dropdown-item" href="a5/index.html">Actividad 5</a></li>
-              <li><a class="dropdown-item" href="#">Actividad 6</a></li>
-              <li><a class="dropdown-item" href="#">Actividad 7</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#examen">Examen</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#proyecto-final">Proyecto Final</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="hero" class="d-flex align-items-center text-white bg-dark vh-100">
-    <div class="container text-center">
-      <h1 class="display-4">¡Bienvenido a mi Portafolio!</h1>
-      <p class="lead">Aquí podrás encontrar mis proyectos y actividades realizados durante el semestre.</p>
-      <a href="#about" class="btn btn-primary btn-lg mt-3">Conoce más sobre mí</a>
-    </div>
-  </section>
-
- <!-- Acerca de mí -->
- <section id="about" class="py-5 bg-light">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-4">
-        <img src="img/INICIO.jpeg" alt="Ximena" class="img-fluid rounded-circle shadow">
+    <!-- Título Principal -->
+    <h1 class="text-center my-5">GRID</h1>
+
+    <!-- Sección 1: Tres columnas iguales -->
+    <section>
+      <h2>Tres Columnas Iguales</h2>
+      <div class="row">
+        <div class="col-md-4 bg-primary text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio consequatur possimus quam eum fugit consequuntur alias perspiciatis adipisci laboriosam dolorem quaerat omnis accusamus, facilis, rerum, qui dignissimos quod officia ad.</div>
+        <div class="col-md-4 bg-secondary text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid omnis placeat nihil commodi unde ducimus facere nam dolorum sed iure, consequuntur, aspernatur animi repudiandae hic! Iusto odit eligendi magni!</div>
+        <div class="col-md-4 bg-warning text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores nam facilis ratione quibusdam illum sint dignissimos sequi cupiditate fuga pariatur, sunt maxime omnis odio optio impedit modi veritatis nostrum!</div>
       </div>
-      <div class="col-lg-8">
-        <h2 class="display-6">Sobre mí</h2>
-        <p class="text-muted">"¡Hola! Soy Ximena, y este es mi portafolio de actividades. Es un honor compartir mi aprendizaje contigo, pues cada día pretendo mejorar. Aquí podrás encontrar mis actividades más importantes y mis proyectos finales.</p>
-        <a href="#actividades" class="btn btn-outline-dark mt-3">Ver Actividades</a>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- Sección 2: Columnas diferentes (8 y 4) -->
+    <section>
+      <h2>Columnas Diferentes (8 y 4)</h2>
+      <div class="row">
+        <div class="col-md-8 bg-info text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, est eligendi nostrum suscipit facere itaque vitae veniam dignissimos dolores soluta officia at aspernatur incidunt, non aperiam voluptates necessitatibus labore quidem!</div>
+        <div class="col-md-4 bg-primary text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, cumque molestiae, quidem quibusdam voluptatibus omnis, saepe inventore dolore quaerat tempore tempora voluptas assumenda dolor autem! Praesentium numquam molestias eum nesciunt?</div>
       </div>
-    </div>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- Sección 3: Columnas diferentes con columnas anidadas dentro de la columna de 8 -->
+    <section>
+      <h2>Columnas Diferentes (8 y 4) con Columnas Anidadas</h2>
+      <div class="row">
+        <div class="col-md-8 bg-dark text-white">
+          <p>Columna (columnas anidadas):</p>
+          <div class="row">
+            <div class="col-md-6 bg-info text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ad neque illum saepe vitae, aut iure quibusdam consectetur perferendis, inventore optio distinctio commodi facilis rerum, accusantium ullam nisi eum? Exercitationem.</div>
+            <div class="col-md-6 bg-primary text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci enim aliquam sunt pariatur quaerat deleniti provident qui, voluptate, iste, non aliquid temporibus assumenda. Dolores aut numquam maxime fugit cumque optio.</div>
+          </div>
+        </div>
+        <div class="col-md-4 bg-warning text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ut reprehenderit eum aperiam, perferendis aliquid odio dolor velit mollitia corporis, exercitationem quae tempora fugit possimus. Ut quos est obcaecati labore.</div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+   <!-- Sección 4: Mezcla de columnas (sm, md, lg) -->
+    <section>
+      <h2>Mezcla de Columnas (sm, md, lg)</h2>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 bg-primary text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, doloribus. Tempore minima labore quis debitis ut, iste rem maxime deserunt, est corrupti beatae tempora inventore consequuntur et quae molestiae assumenda.</div>
+        <div class="col-sm-12 col-md-6 col-lg-4 bg-secondary text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti odio voluptates vel nisi odit, animi eos beatae reprehenderit, autem rem eveniet ea molestiae esse? Est blanditiis accusamus pariatur voluptatibus corrupti.</div>
+        <div class="col-sm-12 col-md-12 col-lg-4 bg-primary text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione culpa ad, doloribus ut sed, non asperiores iure, quod nulla saepe. Delectus mollitia assumenda eos natus, accusamus vitae ratione quam!</div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- Sección 5: Mezcla de columnas (sm, lg) -->
+    <section>
+      <h2>Mezcla de Columnas (sm, lg)</h2>
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 bg-info text-white"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus culpa laborum asperiores nemo. Esse corporis temporibus tempora expedita, eos velit dolores laborum inventore consectetur accusantium eaque, in ipsam, reprehenderit assumenda.</div>
+        <div class="col-sm-12 col-lg-6 bg-warning text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quia debitis minima placeat non dolorum vero quam adipisci, pariatur quis dolore! Accusamus nobis excepturi itaque? Autem tempora dolores ad in?</div>
+      </div>
+    </section>
+
   </div>
-</section>
 
-
-  <!-- Actividades -->
-<section id="actividades" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-5">Mis Actividades</h2>
-    <div class="row g-4 justify-content-center">
-      <!-- Actividad 1 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <div class="card-body text-center">
-            <h5 class="card-title">Actividad 1</h5>
-            <p class="card-text">Presentación (Herramientas Básicas).</p>
-            <a href="https://www.canva.com/design/DAGOao7nuCI/B3rtgYF6S9WGXMGh2mcTCw/edit?utm_content=DAGOao7nuCI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-primary" target="_blank">Ver Actividad</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Actividad 2 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <div class="card-body text-center">
-            <h5 class="card-title">Actividad 2</h5>
-            <p class="card-text">Fase A. HTML5.</p>
-            <a href="a2/index.html" class="btn btn-primary" target="_blank">Ver Actividad</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Actividad 3 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <div class="card-body text-center">
-            <h5 class="card-title">Actividad 3</h5>
-            <p class="card-text">Fase B CSS3.</p>
-            <a href="a3/index2.html" class="btn btn-primary" target="_blank">Ver Actividad</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Actividad 4 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <div class="card-body text-center">
-            <h5 class="card-title">Actividad 4</h5>
-            <p class="card-text">Sitio de Aficiones.</p>
-            <a href="a4/index.html" class="btn btn-primary" target="_blank">Ver Actividad</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Actividad 5 -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <div class="card-body text-center">
-            <h5 class="card-title">Actividad 5</h5>
-            <p class="card-text">Bootstrap.</p>
-            <a href="a5/index.html" class="btn btn-primary" target="_blank">Ver Actividad</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Examen -->
-  <section id="examen" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2>Examen</h2>
-      <p>Examen práctico tercer semestre.</p>
-    </div>
-  </section>
-
-  <!-- Proyecto Final -->
-  <section id="proyecto-final" class="py-5">
-    <div class="container text-center">
-      <h2>Proyecto Final</h2>
-      <p>P R Ó X I M A M E N T E.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-      <p>&copy; 2024 PORTAFOLIO XCF. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

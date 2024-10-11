@@ -1,82 +1,107 @@
-/* Estilos personalizados */
-body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*resetear */
+*{
+    margin: 0px;
+    padding: 0px;
 }
-
-.navbar {
-  padding: 1rem;
+/*Centrar el contenido de la pagina*/
+body{
+    text-align: center;
+    background-color:#18529d; color: #FFFFFF;
 }
-
-#hero {
-  background: url('https://via.placeholder.com/1920x1080') center center no-repeat;
-  background-size: cover;
-  color: white;
+/* centrar el contenido de la pagina web*/
+#agrupar {
+    width: 980px;
+    margin:5px auto;
+    background-color: #18529d;
+    padding: 20px;
 }
-
-#about img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
+/*Formato a la cabecera de la pagina */
+#cabecera {
+    background-color: #FFFFFF;color: black; border: 1px solid #999;
+    padding: 15px;
 }
-
-.card {
-  transition: transform 0.3s, box-shadow 0.3s;
+/*convertir lista desordenada en barra de menu */
+#menu {
+    background: #0f0f0f;
+    padding: 5px 15px;
 }
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana, sans-serif;
 }
-/* Actividades - Alinear texto y ajustar estilos */
-#actividades {
-  background-color: #f8f9fa; /* Fondo suave para mayor contraste */
-  padding: 3rem 0;
+section {
+    float: left;
+    width: 660px;
+    margin: 20px;
+    border-right: 2px white;
 }
-
-#actividades h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #343a40;
+#columna {
+    float: left;
+    width: 220px;
+    margin: 20px 0px;
+    padding: 20px;
+    background: #4e4d4d;
 }
-
-#actividades .card {
-  border: none;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+#pie {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid #999;
 }
-
-#actividades .card:hover {
-  transform: scale(1.05);
+article{
+    background: hwb(203 21% 33%);
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 15px;
 }
-
-#actividades .card-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #007bff;
+article footer {
+    text-align: right;
 }
-
-#actividades .card-text {
-  color: #6c757d;
+time {
+    color: #999;
 }
-
-#actividades .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+figcaption {
+    font: italic 14px verdana, sans-serif; 
+    color: black;
 }
-
-#actividades .btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
+nav {display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+ } 
+ h1 {
+     color: black;
+     font-size: 45px;
+  } 
+  h2,h3,h4,h5,h6 { 
+     color: black;
+     font-size: 14px;
+  } 
+  p { 
+     color: black;
+     font-size: 14px;
+  } 
+ 
+  ul li{
+     display: inline-block;
+     padding: 20px 20px;
+ }
+/*estilo a los enlaces*/
+a:link {
+    color: #FFFFFF;
 }
-
-footer {
-  background-color: #343a40;
-  color: white;
-  padding: 10px 0;
+a:visited {
+    color: yellow;
+}
+a:hover {
+    color: yellowgreen;
+}
+a{
+color: #FFFFFF;
+text-decoration: none;
 }
